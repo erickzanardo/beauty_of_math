@@ -1,0 +1,25 @@
+name: beauty_of_math
+description: "A Flutter application to show how beautiful math is"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flame: ^1.11.0
+  flutter:
+    sdk: flutter
+  flutter_deck: ^0.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^5.1.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
