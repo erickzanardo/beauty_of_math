@@ -18,10 +18,15 @@ class IntroSlide extends FlutterDeckSlideWidget {
               'Who am I',
               style: Theme.of(context).textTheme.displayLarge,
             ),
-            const Text('Born and raised in Brazil 🇧🇷'),
-            const Text('Tech Delivery Lead @ VGV'),
-            const Text('OSS Maintainer @ Flame Engine 🔥 (and other projects)'),
-            const Text('Independent Game Developer at night 🎮🌙'),
+            const SizedBox(height: 48),
+            Text(
+              'Born and raised in Brazil 🇧🇷'
+              '\nTech Delivery Lead @ VGV '
+              '\nOSS Maintainer @ Flame Engine 🔥 (and other projects) '
+              '\nIndependent Game Developer at night 🎮🌙',
+              style: Theme.of(context).textTheme.headlineSmall,
+              textAlign: TextAlign.center,
+            ),
           ],
         );
       },

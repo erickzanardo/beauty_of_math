@@ -2,11 +2,11 @@ import 'package:beauty_of_math/examples/examples.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AnglesAndRadiansExampleSlide extends FlutterDeckSlideWidget {
-  const AnglesAndRadiansExampleSlide()
+class VectorsDistanceAndDirectionExampleSlide extends FlutterDeckSlideWidget {
+  const VectorsDistanceAndDirectionExampleSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/angles-and-radians-example',
+            route: '/vectors-distance-and-direction-example',
           ),
         );
 
@@ -18,7 +18,7 @@ class AnglesAndRadiansExampleSlide extends FlutterDeckSlideWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '1. Degrees and Radians 📐',
+              '5. Vectors 🧭 - Distance and direction',
               style: Theme.of(context).textTheme.displayLarge,
             ),
             const SizedBox(height: 100),
@@ -29,21 +29,17 @@ class AnglesAndRadiansExampleSlide extends FlutterDeckSlideWidget {
                   SizedBox(width: 48),
                   FlutterDeckCodeHighlight(
                     code: '''
-canvas.drawArc(
-  Rect.fromLTWH(0, 0, 100, 100), // The size of the arc
-  0, // The start angle (in radians)
-  radian, // The sweep angle (in radians)
-  false, // if should use center
-  paint, // The paint to use
+final distanceVector = target - position;
+final distance = distanceVector.length;
+final direction = math.atan2(
+  distanceVector.y,
+  distanceVector.x,
 );
 ''',
                   ),
-                  SizedBox(
-                    height: 600,
-                    width: 800,
-                    child: Center(
-                      child: PiDemonstration(),
-                    ),
+                  SizedBox(width: 200),
+                  Center(
+                    child: VectorDistanceAndDirectionExample(),
                   ),
                 ],
               ),

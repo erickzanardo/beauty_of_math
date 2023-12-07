@@ -23,9 +23,9 @@ class GoalSlide extends FlutterDeckSlideWidget {
               padding: const EdgeInsets.all(8),
               child: Text(
                 'Math is something that can scare developers sometimes. '
-                '\nThat was (and still is) the case for me. In this '
-                'presentation I hope to use my learning experience in the '
-                'hope to show that it '
+                '\n\nThat was (and still is) the case for me. '
+                '\n\nIn this presentation I hope to use my own learning '
+                'experience in the hopes to show that it '
                 "isn't that complicated and that it can be beautiful!",
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headlineMedium,
